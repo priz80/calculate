@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Калькулятор</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="calc-block">
+        <div class="title"><p>Оцените рост ваших инвестиций</p></div>
+        <div class="forma-block">
+          <div class="img-forma">
+            <img src="./img/image_bar.png" alt="" />
+          </div>
+          <div class="forma">
+            <div class="forma-place">
+              <p>Начальная сумма</p>
+              <input type="number" value="50000" id="sum" />
+            </div>
+            <div class="forma-place">
+              <p>Длительность лет</p>
+              <input type="number" value="3" id="year" />
+            </div>
+            <div class="forma-result">
+              <p class="title-result">Результирующий баланс</p>
+              <p class="subtitle-result" id="result"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="description">
+        <div class="description-title">
+          <p>Как работает калькулятор</p>
+        </div>
+        <div class="description-block">
+          <div class="img-description">
+            <img src="./img/image_question.png" alt="" />
+          </div>
+          <div class="description-subtitle">
+            <p>
+              Калькулятор рассчитывает сумму через определенный срок,
+              предполагая годовую доходность 12%.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="/exam/calculate.js"></script>
+  </body>
+</html>
