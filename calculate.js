@@ -1,4 +1,4 @@
-document.getElementById("result").innerHTML = 68000;
+document.getElementById("result").textContent = 68000;
 
 document.querySelectorAll("input").forEach((input) => {
   input.addEventListener("input", () => {
@@ -10,6 +10,6 @@ document.querySelectorAll("input").forEach((input) => {
     } else {
       location.reload();
     }
-    document.getElementById("result").innerHTML = result;
+    document.getElementById("result").textContent = result;
   });
 });
