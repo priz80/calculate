@@ -16,16 +16,20 @@
           </div>
           <div class="forma">
             <div class="forma-place">
-              <p>Начальная сумма</p>
+              <p>Начальная сумма, руб.</p>
               <input type="number" value="50000" id="sum" />
             </div>
             <div class="forma-place">
-              <p>Длительность лет</p>
+              <p>Длительность, лет</p>
               <input type="number" value="3" id="year" />
+            </div>
+            <div class="forma-place">
+              <p>Годовая доходность, %</p>
+              <input type="number" value="12" id="per" />
             </div>
             <div class="forma-result">
               <p class="title-result">Результирующий баланс</p>
-              <p class="subtitle-result" id="result"></p>
+              <div class="subtitle-result"><p id="result"></p>&nbsp;<p>руб.</p></div>
             </div>
           </div>
         </div>
@@ -40,8 +44,8 @@
           </div>
           <div class="description-subtitle">
             <p>
-              Калькулятор рассчитывает сумму через определенный срок,
-              предполагая годовую доходность 12%.
+              Калькулятор рассчитывает результирующий баланс через определенный срок,
+              предполагая годовую доходность 12% по умолчанию или указанную годовую доходность.
             </p>
           </div>
         </div>
