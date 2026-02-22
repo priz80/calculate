@@ -4,7 +4,9 @@ document.querySelectorAll("input").forEach((input) => {
     input.addEventListener("input", () => {
         sum = +document.getElementById("sum").value;
         year = +document.getElementById("year").value;
-        result = sum * 0.12 * year + sum;
+        per = +document.getElementById("per").value;
+        per = per / 100;
+        result = sum * per * year + sum;
         document.getElementById("result").innerHTML = result;
     });
 })
